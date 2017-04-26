@@ -1,6 +1,6 @@
-# Quasar App
+# Portfolio
 
-> A Quasar project
+> A new portfolio site
 
 ## Build Setup
 
