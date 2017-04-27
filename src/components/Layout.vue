@@ -146,6 +146,14 @@ export default {
     margin-bottom: 60px;
 }
 
+@media screen and (max-width: 600px) {
+    .modal-title {
+        font-size: 25px;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+}
+
 .info-divider{
     width: 200px;
     border: 0; 

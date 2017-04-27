@@ -26,6 +26,10 @@ body{
   color: #bbb;
 }
 
+.layout-padding, .logo{
+  margin-bottom: 40px
+}
+
 button{
   border-radius: 0
 }
