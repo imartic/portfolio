@@ -9,6 +9,7 @@ require(`quasar/dist/quasar.${__THEME}.css`)
 import Vue from 'vue'
 import Quasar from 'quasar'
 import router from './router'
+import 'babel-polyfill'
 
 Vue.use(Quasar) // Install Quasar Framework
 
