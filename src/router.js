@@ -21,9 +21,32 @@ export default new VueRouter({
    */
 
   routes: [
-    { path: '/', component: load('Index') },
-    { path: '/about', component: load('About') },
-    { path: '/contact', component: load('Contact') },
-    { path: '*', component: load('Error404') }
+    {
+      path: '/',
+      component: load('Index')
+    },
+    {
+      path: '/about',
+      component: load('About')
+    },
+    {
+      path: '/contact',
+      component: load('Contact')
+    },
+    {
+      path: '/portfolio',
+      component: load('Portfolio'),
+      children: [
+        {
+          path: '/:id',
+          name: 'project',
+          component: load('Project')
+        }
+      ]
+    },
+    {
+      path: '*',
+      component: load('Error404')
+    }
   ]
 })
