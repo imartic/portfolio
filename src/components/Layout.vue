@@ -109,7 +109,6 @@ export default {
 }
 
 .contact-info-btn {
-    z-index: 1000;
     position: fixed;
     bottom: 15px;
     right: 15px;
