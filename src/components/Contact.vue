@@ -11,7 +11,7 @@
 
           <div class="row wrap gutter">
             <div class="auto">
-              <input class="full-width" v-model="mail" placeholder="Your e-mail" name="email">
+              <input type="email" class="full-width" v-model="mail" placeholder="Your e-mail" name="email">
             </div>
             <div class="auto">
               <input class="full-width" v-model="subject" placeholder="Subject" name="_subject">
@@ -116,7 +116,7 @@ export default {
       var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
       return re.test(email)
     },
-    closeAlert () { // 1 = sign in, 2 = sign up
+    closeAlert () {
       this.alert = false
       this.alertMsg = ''
     }

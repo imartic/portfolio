@@ -18,7 +18,7 @@
             style="font-weight:400"
             @click="$refs.infoModal.toggle()">
         <i>person</i>
-        <q-tooltip anchor="center left" self="center right" :offset="[-10,0]">
+        <q-tooltip class="desktop-only" anchor="center left" self="center right" :offset="[-10,0]">
             Contact info 
         </q-tooltip>
     </button>
@@ -109,6 +109,7 @@ export default {
 }
 
 .contact-info-btn {
+    z-index: 1000;
     position: fixed;
     bottom: 15px;
     right: 15px;
@@ -146,14 +147,6 @@ export default {
     margin-bottom: 60px;
 }
 
-@media screen and (max-width: 600px) {
-    .modal-title {
-        font-size: 25px;
-        margin-top: 50px;
-        margin-bottom: 40px;
-    }
-}
-
 .info-divider{
     width: 200px;
     border: 0; 
@@ -171,7 +164,7 @@ export default {
 .contact-info{list-style-type: none;padding:0}
 .contact-info li{padding-bottom:8px}
 .contact-info .title{color:#ddd;display:inline-flex;vertical-align:middle;padding-bottom:4px}
-.contact-info .title i{font-size:28px;padding-right:15px}
+.contact-info .title i{font-size:26px;padding-right:15px}
 .contact-info .title .fa{padding-left:2px;}
 .contact-info .text{
     font-size:20px;
@@ -186,5 +179,29 @@ export default {
 .contact-info .fa{padding-left:3px;}
 .contact-info .text:hover{
     color: #eee
+}
+
+@media screen and (max-width: 600px) {
+    .modal-title {
+        font-size: 25px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .contact-info .text, .contact-info .title i {
+        font-size: 18px;
+    }
+    .info-divider{
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-height: 600px) {
+    .modal-title {
+        margin-top: -30px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .layout-padding {
+        margin-top: 40px;
+    }
 }
 </style>

@@ -21,6 +21,9 @@ export default {
 </script>
 
 <style>
+html {
+	overflow-x: hidden;
+}
 body{
   background: #14151a;
   color: #bbb;
@@ -46,5 +49,16 @@ button:hover{
 }
 .fade-enter, .fade-leave-active {
   opacity: 0
+}
+
+@media screen and (max-height: 600px) {
+  .layout-padding, .logo{
+    margin-top: 60px
+  }
+}
+@media screen and (max-width: 400px) {
+  .layout-padding, .logo{
+    margin-top: 20px
+  }
 }
 </style>

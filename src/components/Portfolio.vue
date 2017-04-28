@@ -7,7 +7,7 @@
       <div class="home-subtitle">
 
       <div class="row wrap gutter sm-column items-stretch">
-        <div class="auto lg-width-1of3 self-start" v-for="project in portfolio">
+        <div class="auto lg-width-1of3" v-for="project in portfolio">
           <div class="project-card">
             <div class="card-title">{{ project.title }}</div>
 
@@ -189,8 +189,17 @@ export default {
   margin:3px 7px 3px 0;
   display: inline-block;
 }
+.project-card .card-content{
+  height: 110px
+}
 
 .card-actions > *:not(:last-child){
   padding: 0
+}
+
+@media screen and (max-width: 1277px) {
+  .project-card .card-content{
+    height: auto
+  }
 }
 </style>

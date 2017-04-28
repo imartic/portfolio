@@ -34,7 +34,7 @@
                 <button class="close-modal-cv text-shadow" @click="$refs.cvModal.toggle()">
                     <i>close</i>
                 </button>
-                <div class="layout-padding text-center">
+                <div class="layout-padding text-center cv-modal-layout">
                     <h5 class="modal-title-cv text-shadow">Choose language of CV</h5>
                     <hr class="info-divider"/>
                     <div class="list cv-list">
@@ -229,5 +229,8 @@ export default {
 
 .cv-confirm-btn{
   margin-top: 50px
+}
+.cv-modal-layout{
+  margin: 0
 }
 </style>
