@@ -1,6 +1,6 @@
 # Portfolio
 
-> A new portfolio site
+> New personal website built with Vue.js and Quasar Framework
 
 ## Build Setup
 
