@@ -84,8 +84,8 @@ export default {
       rotateX: 0,
       about: 'I\'m a Software and Web Developer and fresh graduate ' +
              'of Telematics with passion for coding and design. I have over 1 year ' +
-             'professional experience as a Software Developer developing mainly for desktop, ' +
-             'but have also worked on several web-based projects. Lately I\'m focusing on ' +
+             'professional experience as a Software Developer developing desktop and web applications. ' +
+             'Lately I\'m focusing on ' +
              'Front-end web development and learning about the latest frameworks like Vue and ' +
              'React. When I\'m not coding, I try to do some design work and sports.',
       getInTouch: `If you want to get in touch with me, feel free to 
