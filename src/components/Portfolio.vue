@@ -69,6 +69,14 @@ export default {
           link: ''
         },
         {
+          title: 'Transformers App',
+          thumbnail: '',
+          text: 'A demo web application for configuring and organising transformers.',
+          tech: ['React', 'Redux'],
+          github: 'https://github.com/imartic/transformers-app',
+          link: ''
+        },
+        {
           title: 'MyBiz v1',
           thumbnail: '',
           text: 'A web application for creating and exporting business proposals.',
